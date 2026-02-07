@@ -11,29 +11,29 @@ brew tap A3S-Lab/tap
 Then install the tools you need:
 
 ```bash
-# Install A3S core CLI
-brew install a3s
-
-# Install A3S Code (Claude Code integration)
+# Install A3S Code (AI agent with tool execution)
 brew install a3s-code
-
-# Install A3S Box (sandbox runtime)
-brew install a3s-box
 
 # Install A3S Tools (built-in tools binary)
 brew install a3s-tools
 
 # Install A3S Search (meta search engine)
 brew install a3s-search
+
+# Install A3S Power (local model management)
+brew install a3s-power
+
+# Install SafeClaw (secure personal AI assistant)
+brew install safeclaw
 ```
 
 ## Available Formulae
 
-- **`a3s`** - A3S core CLI tool for managing autonomous agent systems
-- **`a3s-code`** - A3S Code integration for Claude Code
-- **`a3s-box`** - A3S Box sandbox runtime for secure agent execution
+- **`a3s-code`** - AI agent with tool execution capabilities and gRPC service
 - **`a3s-tools`** - Built-in tools binary (bash, read, write, edit, grep, glob, ls, cron)
 - **`a3s-search`** - Embeddable meta search engine CLI with proxy pool support
+- **`a3s-power`** - Local model management and serving with OpenAI-compatible API
+- **`safeclaw`** - Secure Personal AI Assistant with TEE Support
 
 ### a3s-search Usage
 
@@ -59,11 +59,11 @@ a3s-search engines
 ```
 homebrew-tap/
 ├── Formula/           # Homebrew formula files
-│   ├── a3s.rb        # A3S core CLI
 │   ├── a3s-code.rb   # A3S Code
-│   ├── a3s-box.rb    # A3S Box
 │   ├── a3s-tools.rb  # A3S Tools
-│   └── a3s-search.rb # A3S Search
+│   ├── a3s-search.rb # A3S Search
+│   ├── a3s-power.rb  # A3S Power
+│   └── safeclaw.rb   # SafeClaw
 └── README.md         # This file
 ```
 
@@ -72,7 +72,7 @@ homebrew-tap/
 To test formulas locally:
 
 ```bash
-brew install --build-from-source Formula/a3s.rb
+brew install --build-from-source Formula/a3s-code.rb
 ```
 
 ## License
