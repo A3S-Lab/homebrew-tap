@@ -1,28 +1,28 @@
 class A3sPower < Formula
   desc "Local model management and serving with OpenAI-compatible API"
   homepage "https://github.com/A3S-Lab/Power"
-  version "0.1.2"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.2/a3s-power-v0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "4c519d64ed540f6e34170a894137538f0deb0a96533f53b4433cb029ff9c5478"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.4/a3s-power-v0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "b9cda0625998c62af23bccd04df9756dfda45b5ba63cbb51e11f0785a7624ac3"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.2/a3s-power-v0.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "5a88f8134ac234a6007c92a8e09aea34fe1fe538214fed189e62f77f441f9833"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.4/a3s-power-v0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "00c691900777d4d0039107961d22aaa6d7538d6be37b50f986997129dd5215ef"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.2/a3s-power-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d9c1da6d762f8db66593d429562810206832c10098e7978277bf0fefbd891e68"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.4/a3s-power-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d8d7add487909be1693537f37c1a1c6cdd7dac0f4c868ec27a46bcf128186e8d"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.2/a3s-power-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a5467d98cd3b48090e708ad7886f4be126eab1e9b9304c544a74e35de4cd8cbb"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.1.4/a3s-power-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ccc43185c6bb276007704c6cce5ac8b0f638f420664254944fd3e4b22617b38b"
     end
   end
 
