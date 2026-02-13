@@ -5,8 +5,8 @@
 class A3sCode < Formula
   desc "AI agent with tool execution capabilities and gRPC service"
   homepage "https://github.com/A3S-Lab/Code"
-  url "https://crates.io/api/v1/crates/a3s-code/0.3.1/download"
-  sha256 "e692dd761fce4781613803d89ef37ea186754df06ec5e9e331ea4d88379e6a4d"
+  url "https://crates.io/api/v1/crates/a3s-code/0.4.0/download"
+  sha256 "35e626cd27cd5a3ff26eca0e8b45fd01bccd96e089d03d63e9140ecfb7d50046"
   license "MIT"
 
   depends_on "rust" => :build
