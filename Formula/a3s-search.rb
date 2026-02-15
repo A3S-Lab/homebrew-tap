@@ -7,7 +7,7 @@ class A3sSearch < Formula
   on_macos do
     on_arm do
       url "https://github.com/A3S-Lab/Search/releases/download/v0.5.5/a3s-search-0.5.5-darwin-arm64.tar.gz"
-      sha256 "4fe67ce557eb7d819ba535c75fe516eff70c1c90f838b535bf7e366ee97dff63"
+      sha256 "4b470d531f15cafc3e711eaecf4ad0a57de441c263147943884d3d606f09af41"
     end
     on_intel do
       url "https://github.com/A3S-Lab/Search/releases/download/v0.5.5/a3s-search-0.5.5-darwin-x86_64.tar.gz"
