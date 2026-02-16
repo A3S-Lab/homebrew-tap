@@ -7,18 +7,18 @@ class A3sBox < Formula
   on_macos do
     on_arm do
       url "https://github.com/A3S-Lab/Box/releases/download/v0.3.0/a3s-box-v0.3.0-macos-arm64.tar.gz"
-      sha256 "48e8bfef6631c0106dadd713ea704968510f82cd3725cc831fe48c9ca8391c0b"
+      sha256 "518da5694e9e0f74cc8004df045ccecc4733ea4f76fa6fd325167ae7249b851d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/A3S-Lab/Box/releases/download/v0.3.0/a3s-box-v0.3.0-linux-arm64.tar.gz"
-      sha256 "d085a5aea03819877f2e62a4d41a25eb6e6bc46d325d39d7ce257faf211b2f4a"
+      sha256 "efa8b3f9f6abe8391112470f9267b1fb83106953a306997e21363e3152cb2b86"
     end
     on_intel do
       url "https://github.com/A3S-Lab/Box/releases/download/v0.3.0/a3s-box-v0.3.0-linux-x86_64.tar.gz"
-      sha256 "fc16858392ecc0d483d9e987dfd4fb21ed06c47ac163e2dafbb12b6fd8981860"
+      sha256 "e876ebffdcc05a7bbe056c27f221408c51e76490c44f6a4fa126bc3bce7f957f"
     end
   end
 
