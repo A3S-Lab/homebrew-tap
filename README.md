@@ -5,7 +5,7 @@ This repository contains Homebrew formulae for A3S Lab projects.
 ## Installation
 
 ```bash
-brew tap A3S-Lab/tap
+brew tap a3s-lab/tap https://github.com/A3S-Lab/homebrew-tap
 ```
 
 Then install the tools you need:
