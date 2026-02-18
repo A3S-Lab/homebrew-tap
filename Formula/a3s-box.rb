@@ -26,7 +26,6 @@ class A3sBox < Formula
     bin.install "a3s-box"
     bin.install "a3s-box-shim"
     bin.install "a3s-box-guest-init"
-    bin.install "a3s-box-nsexec"
     bin.install "a3s-box-cri" if File.exist?("a3s-box-cri")
   end
 
