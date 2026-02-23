@@ -1,28 +1,28 @@
 class A3s < Formula
   desc "Local development orchestration tool for the A3S monorepo"
   homepage "https://github.com/A3S-Lab/Dev"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.2/a3s-0.1.2-darwin-arm64.tar.gz"
-      sha256 "186f334b151891a338e4a47055a72c9b0785b53b399ca93ebe1ad227b8c12479"
+      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.3/a3s-0.1.3-darwin-arm64.tar.gz"
+      sha256 "57e558d890c12e992851f9575f9baed425ebe44c7eb7660d2a66b109fde1e803"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.2/a3s-0.1.2-darwin-x86_64.tar.gz"
-      sha256 "6c7f71ff172fcc7ea31308caf844ccf027a344e23373c3b63a70854a2c5d9afc"
+      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.3/a3s-0.1.3-darwin-x86_64.tar.gz"
+      sha256 "179ad06487d9d24bab27c8399f4b0c89ed7991d1289e8af5cf144fe54c353e0c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.2/a3s-0.1.2-linux-arm64-musl.tar.gz"
-      sha256 "dd0d6051b4f04b4ac526315586010ed1583cc668afd9ad86df447c026796872b"
+      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.3/a3s-0.1.3-linux-arm64-musl.tar.gz"
+      sha256 "2c2df0d32fe76bfe6bd95fa24829789d1a262f7faf8bbaf4c3e2cea3562102d0"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.2/a3s-0.1.2-linux-x86_64-musl.tar.gz"
-      sha256 "4f22ca5e3a9c5831b89a60d112055682244ed2b35e281adf08bd5071db01f320"
+      url "https://github.com/A3S-Lab/Dev/releases/download/v0.1.3/a3s-0.1.3-linux-x86_64-musl.tar.gz"
+      sha256 "6f5daa56e449450d779bffbabc8343d6e1df446a2fd0fada5c495056e9af0a22"
     end
   end
 
