@@ -1,15 +1,33 @@
 class A3sGateway < Formula
-  desc "High-performance Traefik-inspired reverse proxy and API gateway"
+  desc "AI-native API gateway — SSE streaming, scale-to-zero, safe model rollouts"
   homepage "https://github.com/A3S-Lab/Gateway"
-  url "https://crates.io/api/v1/crates/a3s-gateway/0.2.2/download"
-  sha256 "885b190c4210514e72574a771a1290c78702b1f82b46aed61adc5cc5733a1306"
   version "0.2.2"
   license "MIT"
 
-  depends_on "rust" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v#{version}/a3s-gateway-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "PLACEHOLDER_MACOS_ARM64"
+    end
+    on_intel do
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v#{version}/a3s-gateway-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 "PLACEHOLDER_MACOS_X64"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v#{version}/a3s-gateway-v#{version}-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "PLACEHOLDER_LINUX_ARM64"
+    end
+    on_intel do
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v#{version}/a3s-gateway-v#{version}-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "PLACEHOLDER_LINUX_X64"
+    end
+  end
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "a3s-gateway"
   end
 
   test do
