@@ -7,22 +7,22 @@ class A3sSearch < Formula
   on_macos do
     on_arm do
       url "https://github.com/A3S-Lab/Search/releases/download/v1.1.0/a3s-search-1.1.0-darwin-arm64.tar.gz"
-      sha256 "1af2beff94bcbc7a234a1e15858b7013aeff32400e31b0f7677dbb20afdcd18a"
+      sha256 "d8acd9a19cb9c163bae5d074aed8e1c2b789bc0fe23ff49d3fe2153e3f8a886a"
     end
     on_intel do
       url "https://github.com/A3S-Lab/Search/releases/download/v1.1.0/a3s-search-1.1.0-darwin-x86_64.tar.gz"
-      sha256 "715af2e0e3f72665cf2cdf0d96ee21d7f2017598a964502ac6d57160efb30208"
+      sha256 "a6972dabb99c173914044c4dcadb1958435822a88ef83a149840f109b89f23b0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/A3S-Lab/Search/releases/download/v1.1.0/a3s-search-1.1.0-linux-arm64.tar.gz"
-      sha256 "9d02e40eb1b2f6dccfb13f3a60597d18ef38ed2c884e89911cd8daca4a015f21"
+      sha256 "525c1fda2a7129028f5bba133d36077243c82651c235e86eb23ab3540f8a3130"
     end
     on_intel do
       url "https://github.com/A3S-Lab/Search/releases/download/v1.1.0/a3s-search-1.1.0-linux-x86_64.tar.gz"
-      sha256 "4b65fedba0cdbeccfed74bb24e12e23f3ecf6a22cda9d5be770ece7f0762a58c"
+      sha256 "8ebb232ab3cd94deb531a3805f4771da545a6669e87214b5a4a1734516f94d2a"
     end
   end
 
