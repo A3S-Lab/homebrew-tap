@@ -1,0 +1,36 @@
+class A3sSearch < Formula
+  desc "Embeddable meta search engine CLI with proxy pool support"
+  homepage "https://github.com/A3S-Lab/Search"
+  version "@VERSION@"
+  license "MIT"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/A3S-Lab/Search/releases/download/v@VERSION@/a3s-search-@VERSION@-darwin-arm64.tar.gz"
+      sha256 "@SHA_DARWIN_ARM64@"
+    end
+    on_intel do
+      url "https://github.com/A3S-Lab/Search/releases/download/v@VERSION@/a3s-search-@VERSION@-darwin-x86_64.tar.gz"
+      sha256 "@SHA_DARWIN_X86_64@"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/A3S-Lab/Search/releases/download/v@VERSION@/a3s-search-@VERSION@-linux-arm64.tar.gz"
+      sha256 "@SHA_LINUX_ARM64@"
+    end
+    on_intel do
+      url "https://github.com/A3S-Lab/Search/releases/download/v@VERSION@/a3s-search-@VERSION@-linux-x86_64.tar.gz"
+      sha256 "@SHA_LINUX_X86_64@"
+    end
+  end
+
+  def install
+    bin.install "a3s-search"
+  end
+
+  test do
+    assert_match "a3s-search", shell_output("#{bin}/a3s-search --version")
+  end
+end
