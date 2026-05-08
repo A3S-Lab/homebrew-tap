@@ -42,7 +42,7 @@ brew untap a3s-lab/tap
 
 ## Available Formulae
 
-- **`a3s-box`** - MicroVM sandbox runtime with TEE support (Docker-like CLI, 52 commands)
+- **`a3s-box`** - Docker-like MicroVM runtime with 55 commands, experimental CRI, and hardware-gated TEE workflows
 - **`a3s-code`** - AI agent with tool execution capabilities and gRPC service
 - **`a3s-search`** - Embeddable meta search engine CLI with proxy pool support
 - **`a3s-power`** - Local model management and serving with OpenAI-compatible API
