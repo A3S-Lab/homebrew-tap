@@ -1,27 +1,27 @@
 class A3sGateway < Formula
   desc "AI-native API gateway — SSE streaming, scale-to-zero, safe model rollouts"
   homepage "https://github.com/A3S-Lab/Gateway"
-  version "1.0.7"
+  version "1.0.11"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.7/a3s-gateway-v1.0.7-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.11/a3s-gateway-v1.0.11-aarch64-apple-darwin.tar.gz"
       sha256 ""
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.7/a3s-gateway-v1.0.7-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.11/a3s-gateway-v1.0.11-x86_64-apple-darwin.tar.gz"
       sha256 ""
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.7/a3s-gateway-v1.0.7-aarch64-unknown-linux-musl.tar.gz"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.11/a3s-gateway-v1.0.11-aarch64-unknown-linux-musl.tar.gz"
       sha256 ""
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.7/a3s-gateway-v1.0.7-x86_64-unknown-linux-musl.tar.gz"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.11/a3s-gateway-v1.0.11-x86_64-unknown-linux-musl.tar.gz"
       sha256 ""
     end
   end
