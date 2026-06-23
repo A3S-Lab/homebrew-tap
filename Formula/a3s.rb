@@ -1,28 +1,28 @@
 class A3s < Formula
   desc "A3S coding agent CLI — `a3s code` launches the interactive TUI"
   homepage "https://github.com/A3S-Lab/Cli"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.4/a3s-v0.2.4-aarch64-apple-darwin.tar.gz"
-      sha256 "2c94ee58d84fc7b48e57af7e34c082efbec0d4884c564f9277679ce78405af8c"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.5/a3s-v0.2.5-aarch64-apple-darwin.tar.gz"
+      sha256 "8f9752a869255d363a1e2a40f834536c94440d41b6b30a0a00295f363a223531"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.4/a3s-v0.2.4-x86_64-apple-darwin.tar.gz"
-      sha256 "8d91c5d783e25c58b572d359623ab35740310f51809e076c812bbd3887571fdc"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.5/a3s-v0.2.5-x86_64-apple-darwin.tar.gz"
+      sha256 "0ce6c3f442ecdd0ffa1a18a3b8af22d32a81d08f9b6ea73759dc20c5b98f9692"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.4/a3s-v0.2.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "19e21b60514ec149c22ea56ac55a5a5ab3b08527231d7f5e7f1598918b22eb40"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.5/a3s-v0.2.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8d852a940c6fa90dbefcf502df031a95b09ecdb4eefe66417910b75a77437b82"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.4/a3s-v0.2.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "63773ed476cc419345b2187399ba9c121edab401fb5d0cedb61c51ad74147271"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.2.5/a3s-v0.2.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0c8df8dd1ed2ef000ed5e5ff6073681837e05f38e823f9ee0a559cfce35a0ccf"
     end
   end
 
