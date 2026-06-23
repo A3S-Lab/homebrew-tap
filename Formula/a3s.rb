@@ -1,28 +1,28 @@
 class A3s < Formula
-  desc "Command-line interface for the A3S platform"
+  desc "Umbrella CLI for the A3S platform (dispatches a3s <tool> to a3s-<tool>)"
   homepage "https://github.com/A3S-Lab/Cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.3/a3s-0.1.3-darwin-arm64.tar.gz"
-      sha256 "57e558d890c12e992851f9575f9baed425ebe44c7eb7660d2a66b109fde1e803"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.4/a3s-v0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "7f7a34b675c626b99ee0a30fafd966bd49b920e628ef96ce40db297da4fd1450"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.3/a3s-0.1.3-darwin-x86_64.tar.gz"
-      sha256 "179ad06487d9d24bab27c8399f4b0c89ed7991d1289e8af5cf144fe54c353e0c"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.4/a3s-v0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "dacbfa484e2ee715d226b3aed01a466e8139243d65114f6bad86f88573bb7cbc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.3/a3s-0.1.3-linux-arm64-musl.tar.gz"
-      sha256 "2c2df0d32fe76bfe6bd95fa24829789d1a262f7faf8bbaf4c3e2cea3562102d0"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.4/a3s-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "345d4f1cebeb74d5556aee8e9da85ced0a3f973b12c4631d795b072aff1d110c"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.3/a3s-0.1.3-linux-x86_64-musl.tar.gz"
-      sha256 "6f5daa56e449450d779bffbabc8343d6e1df446a2fd0fada5c495056e9af0a22"
+      url "https://github.com/A3S-Lab/Cli/releases/download/v0.1.4/a3s-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c69f47fc45aa4bda04558a03279c61ba3d95690c3b37c95c02a6aae3f25acb95"
     end
   end
 
