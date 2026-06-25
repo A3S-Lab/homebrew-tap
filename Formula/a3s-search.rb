@@ -1,28 +1,28 @@
 class A3sSearch < Formula
   desc "Embeddable meta search engine CLI with proxy pool support"
   homepage "https://github.com/A3S-Lab/Search"
-  version "1.2.3"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Search/releases/download/v1.2.3/a3s-search-1.2.3-darwin-arm64.tar.gz"
-      sha256 "22a29627d32cc1788eccf77b46c37695f333aa354bc7c3eff3b160b1e21264a2"
+      url "https://github.com/A3S-Lab/Search/releases/download/v1.3.0/a3s-search-1.3.0-darwin-arm64.tar.gz"
+      sha256 "b3c4fe06a4cddcac8912434555a58735c20f8dd6472e50423343e82c6599a1b4"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Search/releases/download/v1.2.3/a3s-search-1.2.3-darwin-x86_64.tar.gz"
-      sha256 "a51b0348916690dfce70ecdc4119931af0c3073ddd59d51bc0812ac10fbb8d8e"
+      url "https://github.com/A3S-Lab/Search/releases/download/v1.3.0/a3s-search-1.3.0-darwin-x86_64.tar.gz"
+      sha256 "e3fe9cf85b8074d8f94edc7491dc43f3f8537f7fd6e709077a912e9cfc4dcc4f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Search/releases/download/v1.2.3/a3s-search-1.2.3-linux-arm64.tar.gz"
-      sha256 "bfc620c549252659cd07533346949352a00954b66c0fb665c7456a935f4113e4"
+      url "https://github.com/A3S-Lab/Search/releases/download/v1.3.0/a3s-search-1.3.0-linux-arm64.tar.gz"
+      sha256 "98232933f07d437664c36da17e87d3d5741591fe0bdf77f0c49b74667504ca76"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Search/releases/download/v1.2.3/a3s-search-1.2.3-linux-x86_64.tar.gz"
-      sha256 "edbbe4961864983a37b2bcfce6a2780d03f2d9ae76018b0efb025c22fc73428c"
+      url "https://github.com/A3S-Lab/Search/releases/download/v1.3.0/a3s-search-1.3.0-linux-x86_64.tar.gz"
+      sha256 "4dac30d70f470ea70cd080b11ff4991c15599484aa83bce8f7b1584d74469fb3"
     end
   end
 
