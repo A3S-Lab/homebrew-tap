@@ -1,7 +1,7 @@
 class A3s < Formula
   desc "A3S coding agent CLI — a3s code launches the interactive TUI"
   homepage "https://github.com/A3S-Lab/CLI"
-  version "0.7.7"
+  version "0.7.8"
   license "MIT"
 
   on_macos do
@@ -9,23 +9,23 @@ class A3s < Formula
     # in automatically so the inline OS popup works out of the box.
     depends_on "a3s-lab/tap/a3s-webview"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.7/a3s-v0.7.7-aarch64-apple-darwin.tar.gz"
-      sha256 "7c882b399c4c4c4d357b29bb633bde5550629985af58aa4359b480a528b37b44"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.8/a3s-v0.7.8-aarch64-apple-darwin.tar.gz"
+      sha256 "c97e8a2455be7602a1251a1dd6bf659842e8ce57feb0d36f8e0e8d3a5034ca8e"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.7/a3s-v0.7.7-x86_64-apple-darwin.tar.gz"
-      sha256 "8ae56552c66368ad8d9a44a446211a6025b996b44e5fd08ee54030a578242d7f"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.8/a3s-v0.7.8-x86_64-apple-darwin.tar.gz"
+      sha256 "68a27e2120098b20ff9b4607aa03acf21a89bc2802b62f3eb739418a86de590b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.7/a3s-v0.7.7-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9a1a66e096503895d6de14d14b2810a0795a2470c774eb91f8ff3fe9e25f60a8"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.8/a3s-v0.7.8-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5757a0b085194fd7300bb9b3ff1db997281ae6349336d50c655d2ba7f4cb17dc"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.7/a3s-v0.7.7-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ca20a30c63431642d3a907c3be485983f745bc2adaee6f284e7bd760d5c3da02"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.7.8/a3s-v0.7.8-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fdc2ff362010fba29013033ab0b6f7224630fb17bd254bac94ef5368cdbaf12d"
     end
   end
 
