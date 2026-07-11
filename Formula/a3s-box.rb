@@ -1,24 +1,24 @@
 class A3sBox < Formula
   desc "MicroVM sandbox runtime with TEE support"
   homepage "https://github.com/A3S-Lab/Box"
-  version "3.0.8"
+  version "3.0.9"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Box/releases/download/v3.0.8/a3s-box-v3.0.8-macos-arm64.tar.gz"
-      sha256 "d21f1b795fb3c639a3917ca718f1dcac7b338d1733d0ef66c424cbe96ee73878"
+      url "https://github.com/A3S-Lab/Box/releases/download/v3.0.9/a3s-box-v3.0.9-macos-arm64.tar.gz"
+      sha256 "8fd3fc83fbf1ce6461ad20c44f3f385362c4f6c3b338181f434adb185706eafb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Box/releases/download/v3.0.8/a3s-box-v3.0.8-linux-arm64.tar.gz"
-      sha256 "9821e124d563e4e6a257430dbada495913771d78a3bf896790cbbe83dd46c04a"
+      url "https://github.com/A3S-Lab/Box/releases/download/v3.0.9/a3s-box-v3.0.9-linux-arm64.tar.gz"
+      sha256 "5ac25857a2c0207463c01247e8f4f8135536bf8021257f5d2e9fa84de234c7fc"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Box/releases/download/v3.0.8/a3s-box-v3.0.8-linux-x86_64.tar.gz"
-      sha256 "5258535435be623e7cfb638d822cebfff79106c182ae5cf36e22bb1fcaac55f9"
+      url "https://github.com/A3S-Lab/Box/releases/download/v3.0.9/a3s-box-v3.0.9-linux-x86_64.tar.gz"
+      sha256 "f5361d11a490fe1a637a6ff0da5b7594ee37ae3409ee17cdaf80dbf18d1042e0"
     end
   end
 
