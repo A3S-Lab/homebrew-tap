@@ -1,29 +1,29 @@
 class A3sWebview < Formula
   desc "Native WebView and top-center Agent Island helper for A3S Code"
   homepage "https://github.com/A3S-Lab/WebView"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.3/a3s-webview-v0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "0dc6387e31f583c56fcdf31f09e6e687346b9e9f7663ac12a500f5ed5b7e60d3"
+      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.4/a3s-webview-v0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "7a847653d8b96655da79cc9e806ac04fbf3a2ff3dbfa10a570cfa34fb5af84e1"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.3/a3s-webview-v0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "5d52564c607c8104e01329ce48cb0adc102fef4a72d71c693c3760849301a8cb"
+      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.4/a3s-webview-v0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "8afd49f6a1edde2cf7aaff946a034786d2143ce2ee516b1bb5884dd2c2a54037"
     end
   end
 
   on_linux do
     depends_on "webkitgtk"
     on_arm do
-      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.3/a3s-webview-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0f53b4d41351942b04c007a6c4f2b3096cde66e9c8846f1ccb74a944d42e6df0"
+      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.4/a3s-webview-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0655b653d70ff2bd66a29279334a05d31d33f701bb05debcc41909c6c17e1d64"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.3/a3s-webview-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2acc8c8e12a81f0986283db57208a4210db9fca154502f029fb5d7f5ac5147ef"
+      url "https://github.com/A3S-Lab/WebView/releases/download/v0.1.4/a3s-webview-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f59dd52e2a39a23d1c4f82f029bf372a142a7288c0d5a3b8d20d1dcc412abc23"
     end
   end
 
