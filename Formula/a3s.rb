@@ -1,37 +1,39 @@
 class A3s < Formula
   desc "A3S coding agent CLI — a3s code launches the interactive TUI"
   homepage "https://github.com/A3S-Lab/CLI"
-  version "0.9.8"
-  license "MIT"
+  version "0.10.0"
+  license all_of: ["MIT", "Apache-2.0", "BSD-3-Clause"]
+  depends_on "node"
+  depends_on "ripgrep"
+  depends_on "a3s-lab/tap/a3s-webview"
 
   on_macos do
-    # RemoteUI popup helper (own repo/formula): A3S-Lab/WebView. Pulled
-    # in automatically so the inline OS popup works out of the box.
-    depends_on "a3s-lab/tap/a3s-webview"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.9.8/a3s-v0.9.8-aarch64-apple-darwin.tar.gz"
-      sha256 "2c052f0f23ae116ee3cc181129b2a57a395411f4695cababb79de4c97f594285"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.0/a3s-v0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "5eff99f5b8a873c525a4e0bbf62501ef786598f4a1908486d1faf34dbb38f94c"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.9.8/a3s-v0.9.8-x86_64-apple-darwin.tar.gz"
-      sha256 "3d7aa39ff2f40370b4fd1f225da2124ccfe25511f08291f897bc4ba35aa4e65b"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.0/a3s-v0.10.0-x86_64-apple-darwin.tar.gz"
+      sha256 "dfde21f97f3528d1f55156989c62999403f62e9f159113ea3d54a34cb2ac02d4"
     end
   end
 
   on_linux do
+    depends_on "bubblewrap"
+    depends_on "socat"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.9.8/a3s-v0.9.8-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "be420a077eb3fc19cf54517cbc41e49d02da7b645ba8c4f542246eaa8c040344"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.0/a3s-v0.10.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0fcec83ee383b3096b5d69e7355e37639fce5af2234782e9114229ee92ccdf1d"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.9.8/a3s-v0.9.8-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6dc126142a75ff1c2bebbd35b4531faefede01303c69717c1cde8e3cfd06c10d"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.0/a3s-v0.10.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "31062aff0f388964ed2b8e9944e563ff1e0a85503b94b5cf0731504c4791b848"
     end
   end
 
   def install
     bin.install "a3s"
-    pkgshare.install "web"
+    pkgshare.install "web", "support"
   end
 
   test do
