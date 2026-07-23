@@ -1,28 +1,28 @@
 class A3sSearch < Formula
   desc "Extensible web search CLI with native AnySearch and Tavily providers"
   homepage "https://github.com/A3S-Lab/Search"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Search/releases/download/v2.0.0/a3s-search-2.0.0-darwin-arm64.tar.gz"
-      sha256 "b8ed72e0a922da905dd59566a338b9c893171a6ba655eaf8a787f0b86028adf8"
+      url "https://github.com/A3S-Lab/Search/releases/download/v2.1.0/a3s-search-2.1.0-darwin-arm64.tar.gz"
+      sha256 "a86c5bfa74a1dd57fd7ae9bf80192d6b9706aedacbc06797a4b3b199a4e3cf1b"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Search/releases/download/v2.0.0/a3s-search-2.0.0-darwin-x86_64.tar.gz"
-      sha256 "5602e899d83f1fab796d505fbab896b6695b9b8430d7c9c81a930ae05fe37f23"
+      url "https://github.com/A3S-Lab/Search/releases/download/v2.1.0/a3s-search-2.1.0-darwin-x86_64.tar.gz"
+      sha256 "99eff1ce889776235f9431a11d6763833249dde9302218123c201d6429976eae"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Search/releases/download/v2.0.0/a3s-search-2.0.0-linux-arm64.tar.gz"
-      sha256 "dde1e89585e3a999f4cb5eacfd2cdd20efc59042b5791fc0167f7e0dd3954672"
+      url "https://github.com/A3S-Lab/Search/releases/download/v2.1.0/a3s-search-2.1.0-linux-arm64.tar.gz"
+      sha256 "35b075f062fe332a101eb451e1e1173716330c72ebb4e0f7a69f9241a1245f75"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Search/releases/download/v2.0.0/a3s-search-2.0.0-linux-x86_64.tar.gz"
-      sha256 "1ffb0288b060c2520922ee1cfb74f94252e59dbe42799cb2c43f67ea0deb0532"
+      url "https://github.com/A3S-Lab/Search/releases/download/v2.1.0/a3s-search-2.1.0-linux-x86_64.tar.gz"
+      sha256 "f92f21a0d96e7ad71f994f08f5bf913b5c4fda1ce1e4d4b40c847bcf3b4f3690"
     end
   end
 
