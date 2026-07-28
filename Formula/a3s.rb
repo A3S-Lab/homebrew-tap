@@ -6,23 +6,23 @@ class A3s < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.12/a3s-v0.10.12-aarch64-apple-darwin.tar.gz"
-      sha256 "509c21166690d11b6814e95d5825cfb7538972337d1fb75d05695dfcbb37dcf3"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.13/a3s-v0.10.13-aarch64-apple-darwin.tar.gz"
+      sha256 "550179cd2b724e85fc65399c38b52a899737ceb5711d8546fbe96454fd3a953a"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.12/a3s-v0.10.12-x86_64-apple-darwin.tar.gz"
-      sha256 "913a1bf7389e95c62124f7f1ece2195d9467fab371b0be88b49a327a14fd99e8"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.13/a3s-v0.10.13-x86_64-apple-darwin.tar.gz"
+      sha256 "0a94e5355f599ee4a390fb2b6ca0db27cdd7b3f67e0a80b6e84eab85dfa971ec"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.12/a3s-v0.10.12-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fb7b2d8b9e1d48a45b14218c0b00836f40459ecd49dc60bb5a8dd05322fc5317"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.13/a3s-v0.10.13-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "81b5eb0b3ee0322901fa9b87235e6936b074884e8602f5533d85b98481b5f4f0"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.12/a3s-v0.10.12-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "293e3eae433dc2f6052bfdb849028b8092c20ea57280a1bf423c6fe4107804dc"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.13/a3s-v0.10.13-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "458e416592c6ef24b9025e8ef307fa84ed8d2d5b6d5c74b8ecddc0ca75edf651"
     end
   end
 
