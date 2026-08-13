@@ -1,28 +1,28 @@
 class A3sGateway < Formula
   desc "AI-native API gateway — SSE streaming, scale-to-zero, safe model rollouts"
   homepage "https://github.com/A3S-Lab/Gateway"
-  version "1.0.14"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.14/a3s-gateway-1.0.14-darwin-arm64.tar.gz"
-      sha256 "4045db16b729396a88f4f57e9eb6bd39fd44ea0b00b1c0b215941873af803f51"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.1.0/a3s-gateway-1.1.0-darwin-arm64.tar.gz"
+      sha256 "12e7d727b264683f88b1f7bb796a2a01e26468fc04ddc8dc22506cc762b5d6f9"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.14/a3s-gateway-1.0.14-darwin-x86_64.tar.gz"
-      sha256 "7180810a2bc2f68aca65ec0a8cb478d72247a7fb155ff37958fbc08f636ae02d"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.1.0/a3s-gateway-1.1.0-darwin-x86_64.tar.gz"
+      sha256 "6c9a5f9a55cefc8eee46d037cda77987f0c6ae7e13d43737f953c98bfea524d1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.14/a3s-gateway-1.0.14-linux-arm64-musl.tar.gz"
-      sha256 "323a18065161fcde5ac5d61eb33868cf00fda41ee3c598ab455e849c1dbee7d2"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.1.0/a3s-gateway-1.1.0-linux-arm64-musl.tar.gz"
+      sha256 "d167e02c6c7157872c542593dcf33426ce615fdfa7e73810402fe6c50276fb9d"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.0.14/a3s-gateway-1.0.14-linux-x86_64-musl.tar.gz"
-      sha256 "7ea55ae5c9f92ec34f50f55a16a7e17c43669d37f909ec2769fddaa9dcd9aec0"
+      url "https://github.com/A3S-Lab/Gateway/releases/download/v1.1.0/a3s-gateway-1.1.0-linux-x86_64-musl.tar.gz"
+      sha256 "4a14f7e822f9304f2236ed7652849da12c7874e061583375408ec63446a5ad38"
     end
   end
 
