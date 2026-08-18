@@ -1,28 +1,28 @@
 class A3sPower < Formula
   desc "Privacy-preserving LLM inference for TEE environments"
   homepage "https://github.com/A3S-Lab/Power"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.8.0/a3s-power-v0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "249d547846205f01fcbee3f459190157a8b581b9ed86cd4a750ffb05cb720c4b"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9ed4a69eeb2c842223c828ce862a5357a6e9f175b5bab81cfa7cdc2200fb074a"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.8.0/a3s-power-v0.8.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e17d650a1b3ab822dd67aa478030ca92cdc32050dc67ff8dab2292c9b18b5bbc"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-x86_64-apple-darwin.tar.gz"
+      sha256 "cff0936d704ea233b27898d8fe96a35363d72de7448d00ab7f6af9d7273c7cbd"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.8.0/a3s-power-v0.8.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0126e9b17f9eafdfe134995114890a2cb88f37af4ff810de3d91f0bd7eb73e5a"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8160d220bdd1adc49664f3f258b2c774e528c6362767bb5b9743131b10d1e50b"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.8.0/a3s-power-v0.8.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "91dde6beabac5a72b79050d22226000bd3d44b1cfc1d568fbbc9d609a09bd3d6"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "330cae827517dbf3731c5f9c1e3c5a4a94f25f07feec8fa03cd258ea11e0daca"
     end
   end
 
