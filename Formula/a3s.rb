@@ -8,12 +8,12 @@ class A3s < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.1/a3s-v0.12.1-aarch64-apple-darwin.tar.gz"
-      sha256 "62968a893ec52c5f081fe89b3ec82f6b71d4016bf124ccea7078e896703037a9"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.2/a3s-v0.12.2-aarch64-apple-darwin.tar.gz"
+      sha256 "f9858c3ebb3b97c33007bb7a0cc1d2766bd3616acf7153a300f5c9938455e806"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.1/a3s-v0.12.1-x86_64-apple-darwin.tar.gz"
-      sha256 "0738d98ab5b9540a2e6254467d19e6604f3f124806c9e16242c33c8a750306e5"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.2/a3s-v0.12.2-x86_64-apple-darwin.tar.gz"
+      sha256 "4707af3a78eb7048ca5c4bfa3daaa1ff052f374e5e42f400a89931c1e383dfe8"
     end
   end
 
@@ -21,12 +21,12 @@ class A3s < Formula
     depends_on "bubblewrap"
     depends_on "socat"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.1/a3s-v0.12.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3316e5ee4473c1ae882fbb2a9a1f5913613f3486a4a49637ee29426a481c9b35"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.2/a3s-v0.12.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ab7f63a1654ef0e24077634a0c7d1157df738133c8cca38126a374c2fe6a195b"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.1/a3s-v0.12.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2f5f9abc59392869e97667a2f67b94187032d3da8ea3306042002f15530dc029"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.12.2/a3s-v0.12.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "641c7d1f2cbae8858864567e7658eab4671f665dd0161b30aae276c2c80fe973"
     end
   end
 
@@ -36,7 +36,7 @@ class A3s < Formula
 
   def install
     bin.install "a3s"
-    pkgshare.install "web", "support"
+    pkgshare.install "support"
   end
 
   def post_install
@@ -52,7 +52,6 @@ class A3s < Formula
 
   test do
     assert_match "a3s", shell_output("#{bin}/a3s --version")
-    assert_path_exists pkgshare/"web/index.html"
     managed_srt = pkgshare/"support/managed-srt"
     expected = (pkgshare/"support/managed-srt.tree-sha256").read.strip
     digest = Digest::SHA256.new
