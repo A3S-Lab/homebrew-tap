@@ -1,5 +1,5 @@
 class A3sPower < Formula
-  desc "Privacy-preserving LLM inference for TEE environments"
+  desc "Model-neutral verifiable inference for confidential systems"
   homepage "https://github.com/A3S-Lab/Power"
   version "0.9.0"
   license "MIT"
