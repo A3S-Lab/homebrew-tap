@@ -14,8 +14,11 @@ Then install the tools you need:
 # Install A3S Box (MicroVM sandbox runtime)
 brew install a3s-box
 
-# Install A3S Code (AI agent with tool execution)
-brew install a3s-code
+# Install the A3S terminal coding product
+brew install a3s
+
+# Install the current A3S Code Python SDK (not a Homebrew formula)
+python3 -m pip install a3s-code
 
 # Install A3S Search (meta search engine)
 brew install a3s-search
@@ -27,11 +30,16 @@ brew install a3s-power
 brew install safeclaw
 ```
 
+Intel macOS 12 users should prefer the standalone A3S installer because
+Homebrew itself no longer supports Monterey. Install Node.js 20.11+ and
+ripgrep with MacPorts to enable the complete local command sandbox; the
+`a3s` formula prints the exact commands when used on Monterey.
+
 ### Update & Uninstall
 
 ```bash
-# Update all A3S formulae
-brew update && brew upgrade a3s-box a3s-code a3s-search a3s-power
+# Update current A3S formulae
+brew update && brew upgrade a3s a3s-box a3s-search a3s-power
 
 # Uninstall a formula
 brew uninstall a3s-box
@@ -43,7 +51,8 @@ brew untap a3s-lab/tap
 ## Available Formulae
 
 - **`a3s-box`** - Docker-like MicroVM runtime with 55 commands, experimental CRI, and hardware-gated TEE workflows
-- **`a3s-code`** - AI agent with tool execution capabilities and gRPC service
+- **`a3s`** - Current terminal coding product powered by A3S Code
+- **`a3s-code`** - Legacy 0.6.0 standalone CLI; use `a3s` or the PyPI SDK for current releases
 - **`a3s-search`** - Embeddable meta search engine CLI with proxy pool support
 - **`a3s-power`** - Local model management and serving with OpenAI-compatible API
 - **`safeclaw`** - Secure Personal AI Assistant with TEE Support
@@ -73,7 +82,8 @@ a3s-search engines
 homebrew-tap/
 ├── Formula/           # Homebrew formula files
 │   ├── a3s-box.rb    # A3S Box
-│   ├── a3s-code.rb   # A3S Code
+│   ├── a3s.rb        # Current A3S terminal coding product
+│   ├── a3s-code.rb   # Legacy A3S Code 0.6.0 CLI
 │   ├── a3s-power.rb  # A3S Power
 │   ├── a3s-search.rb # A3S Search
 │   └── safeclaw.rb   # SafeClaw
@@ -85,7 +95,7 @@ homebrew-tap/
 To test formulas locally:
 
 ```bash
-brew install --build-from-source Formula/a3s-code.rb
+brew install --build-from-source Formula/a3s.rb
 ```
 
 ## License

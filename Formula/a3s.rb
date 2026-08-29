@@ -5,10 +5,28 @@ class A3s < Formula
   homepage "https://github.com/A3S-Lab/CLI"
   license all_of: ["MIT", "Apache-2.0", "BSD-3-Clause"]
   depends_on "a3s-lab/tap/a3s-webview"
-  depends_on "node"
-  depends_on "ripgrep"
 
   on_macos do
+    # Homebrew no longer supports Monterey and attempts to build current Node
+    # dependencies from source there. Keep the A3S binary installable, and
+    # direct macOS 12 users to MacPorts for the sandbox prerequisites below.
+    on_ventura :or_newer do
+      depends_on "node"
+      depends_on "ripgrep"
+    end
+    on_monterey :or_older do
+      define_method(:caveats) do
+        <<~EOS
+          Homebrew no longer supports macOS 12 and may fail while building
+          current Node.js dependencies from source. A3S itself is installed
+          from the official Intel archive. For the complete local command
+          sandbox, install Node.js 20.11+ and ripgrep with MacPorts:
+
+            sudo port install nodejs22 ripgrep
+            sudo port select --set node nodejs22
+        EOS
+      end
+    end
     on_arm do
       url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.10/a3s-v0.10.10-aarch64-apple-darwin.tar.gz"
       sha256 "499e85f2f7ff750a98f1d0bab54221a7c4f77060a6031fa15c396a8126482417"
@@ -21,6 +39,8 @@ class A3s < Formula
 
   on_linux do
     depends_on "bubblewrap"
+    depends_on "node"
+    depends_on "ripgrep"
     depends_on "socat"
     on_arm do
       url "https://github.com/A3S-Lab/CLI/releases/download/v0.10.10/a3s-v0.10.10-aarch64-unknown-linux-gnu.tar.gz"
@@ -38,7 +58,7 @@ class A3s < Formula
 
   def install
     bin.install "a3s"
-    pkgshare.install "web", "support"
+    pkgshare.install "support"
   end
 
   def post_install
@@ -54,7 +74,6 @@ class A3s < Formula
 
   test do
     assert_match "a3s", shell_output("#{bin}/a3s --version")
-    assert_path_exists pkgshare/"web/index.html"
     managed_srt = pkgshare/"support/managed-srt"
     expected = (pkgshare/"support/managed-srt.tree-sha256").read.strip
     digest = Digest::SHA256.new
