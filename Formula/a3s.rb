@@ -27,12 +27,12 @@ class A3s < Formula
       end
     end
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.1/a3s-v0.13.1-aarch64-apple-darwin.tar.gz"
-      sha256 "f4ccfb7c140fbc0a63c6807fbe83a37c10890ffa29ad7286be58616b2e575fa3"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.5/a3s-v0.13.5-aarch64-apple-darwin.tar.gz"
+      sha256 "749ad4d3fee2526dcf392cfab813aa608f79dde2155907bd3a2de7c0ea380e11"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.1/a3s-v0.13.1-x86_64-apple-darwin.tar.gz"
-      sha256 "58e58938f198f8fb359a51e71b4ab54223d7f1f7e831a9a8e7522ddf68573615"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.5/a3s-v0.13.5-x86_64-apple-darwin.tar.gz"
+      sha256 "2b2180a7dcdcd8251334906fe07abb28c53d061e8ac8f3d09235773ef707e0d8"
     end
   end
 
@@ -42,12 +42,12 @@ class A3s < Formula
     depends_on "ripgrep"
     depends_on "socat"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.1/a3s-v0.13.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1d20f86bfea2897d47417c6880f45981079bff16f13448b0878dff7a5510b5ca"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.5/a3s-v0.13.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d0d29faee32ac466f6f7dd18e539076bf82056a76ae672402068f52271d1215d"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.1/a3s-v0.13.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c91e615736d866cf269a2f43712cd8e7ce40d15dfacf8a24399cbdd017ab42c6"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.13.5/a3s-v0.13.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f41a71f073e7bc901db5c38d382b600d6f23a64a09705eeecc25590bbde5fd53"
     end
   end
 
