@@ -1,5 +1,11 @@
 # Homebrew Tap for A3S Lab
 
+<p align="center">
+  <strong>Language / 语言:</strong>
+  <a href="README.md">English</a> ·
+  <a href="README.zh-CN.md">中文</a>
+</p>
+
 This repository contains Homebrew formulae for A3S Lab projects.
 
 ## Installation
