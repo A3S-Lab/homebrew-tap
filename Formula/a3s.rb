@@ -5,24 +5,24 @@ class A3s < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.0/a3s-v0.15.0-aarch64-apple-darwin.tar.gz"
-      sha256 "b8a4514df6c35745721e27c06a48426b1f0a1b04775d979e3cc932f2fe0a1589"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-aarch64-apple-darwin.tar.gz"
+      sha256 "bf582214d6edc726a9f98ad15a8e40e6afdc61550285e8f091f11fd67f82ba30"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.0/a3s-v0.15.0-x86_64-apple-darwin.tar.gz"
-      sha256 "71f8bb5b51912a537f3da8b78acc8aa73101c59aaeaa3535be8ffda85eb217bb"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-x86_64-apple-darwin.tar.gz"
+      sha256 "cc2950d98462e39dd70e363d5f00b759bac3b13a185c2e94315eddeacf65bafb"
     end
   end
 
   on_linux do
     depends_on "bubblewrap"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.0/a3s-v0.15.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3fcc69d73577a530f494be73981851bce4ea6672194f47cd5668b9122fef88ae"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ce0e60816cfcd0f742b7a2fd327d0e81376d254c5ebafcc0bb799b62c82055b6"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.0/a3s-v0.15.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9b6918ab4da84f88618cabb460bfea82a228a257438ea42ed10ad84360748c01"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8a3bf7eb2ed5934782c1e7c8adf841fbb3cfd460293baba56a0b06ae379983f9"
     end
   end
 
@@ -31,11 +31,21 @@ class A3s < Formula
     # Keep the target-specific Moli sidecar beside the executable;
     # Code Core discovers bin/moli/moli without a second download.
     bin.install "moli"
+    # Ship libzvec_c_api next to a3s so @loader_path / $ORIGIN resolve.
+    if (buildpath/"libzvec_c_api.dylib").exist?
+      bin.install "libzvec_c_api.dylib"
+    elsif (buildpath/"libzvec_c_api.so").exist?
+      bin.install "libzvec_c_api.so"
+    else
+      odie "release archive is missing libzvec_c_api"
+    end
   end
 
   test do
     assert_match "a3s", shell_output("#{bin}/a3s --version")
     assert_predicate bin/"moli/moli", :exist?
     assert_match "usage: a3s-webview", shell_output("#{bin}/a3s-webview --help")
+    assert_predicate bin/"libzvec_c_api.dylib", :exist? if OS.mac?
+    assert_predicate bin/"libzvec_c_api.so", :exist? if OS.linux?
   end
 end
