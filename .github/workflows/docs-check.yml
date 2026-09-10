@@ -1,0 +1,14 @@
+name: Docs check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify-primary-install-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify brew install a3s is the primary documented path
+        run: bash scripts/verify-primary-install-docs.sh
