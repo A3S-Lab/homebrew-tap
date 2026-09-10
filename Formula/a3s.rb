@@ -5,24 +5,24 @@ class A3s < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-aarch64-apple-darwin.tar.gz"
-      sha256 "bf582214d6edc726a9f98ad15a8e40e6afdc61550285e8f091f11fd67f82ba30"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.9/a3s-v0.15.9-aarch64-apple-darwin.tar.gz"
+      sha256 "75b5a4b25b87e95211b86fd7b5af18171804050282a227c8755efd979855d8a8"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-x86_64-apple-darwin.tar.gz"
-      sha256 "cc2950d98462e39dd70e363d5f00b759bac3b13a185c2e94315eddeacf65bafb"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.9/a3s-v0.15.9-x86_64-apple-darwin.tar.gz"
+      sha256 "4c9bba855d9005bc650d185fd317664e3a590a02536a766c1ca1884742ee5dd7"
     end
   end
 
   on_linux do
     depends_on "bubblewrap"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ce0e60816cfcd0f742b7a2fd327d0e81376d254c5ebafcc0bb799b62c82055b6"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.9/a3s-v0.15.9-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a1f414ad73c3323c529593b505617b4139669586a8f0516224ef1c36fe1829f2"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.4/a3s-v0.15.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8a3bf7eb2ed5934782c1e7c8adf841fbb3cfd460293baba56a0b06ae379983f9"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.9/a3s-v0.15.9-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6f8ca938f5b675c482b0e623c7ab2f02b9d9d1948385f5c75acc7d11fa69e3af"
     end
   end
 
@@ -39,13 +39,6 @@ class A3s < Formula
     else
       odie "release archive is missing libzvec_c_api"
     end
-  end
-
-  def caveats
-    <<~EOS
-      The interactive Code TUI is launched with:
-        a3s code
-    EOS
   end
 
   test do
