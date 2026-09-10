@@ -46,6 +46,27 @@ brew install a3s
 a3s code
 ```
 
+### 从旧版安装迁移
+
+旧版 `a3s` 依赖独立的 `a3s-webview` formula；当前 `a3s` 在同一 keg 内附带
+`a3s-webview`。两者并存会导致符号链接失败。推荐用统一安装脚本（会自动清理冲突）：
+
+```bash
+curl --proto '=https' --tlsv1.2 -LsSf \
+  https://raw.githubusercontent.com/A3S-Lab/a3s/main/install.sh | sh
+```
+
+或手动清理后只安装 `a3s`：
+
+```bash
+brew uninstall a3s-code 2>/dev/null || true
+brew uninstall a3s-webview 2>/dev/null || true
+brew uninstall --force a3s 2>/dev/null || true
+brew install a3s-lab/tap/a3s
+```
+
+不要在伞形 `a3s` 之外再单独安装 `a3s-webview` formula。
+
 ### 更新与卸载
 
 ```bash

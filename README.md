@@ -46,6 +46,28 @@ brew install a3s
 a3s code
 ```
 
+### Migrating from older installs
+
+Old `a3s` releases depended on a separate `a3s-webview` formula; current `a3s`
+ships `a3s-webview` in the same keg. Keeping both causes symlink failures.
+Prefer the unified installer (auto-cleans conflicts):
+
+```bash
+curl --proto '=https' --tlsv1.2 -LsSf \
+  https://raw.githubusercontent.com/A3S-Lab/a3s/main/install.sh | sh
+```
+
+Or clean manually, then install only `a3s`:
+
+```bash
+brew uninstall a3s-code 2>/dev/null || true
+brew uninstall a3s-webview 2>/dev/null || true
+brew uninstall --force a3s 2>/dev/null || true
+brew install a3s-lab/tap/a3s
+```
+
+Do not keep a separate `a3s-webview` formula installed beside umbrella `a3s`.
+
 ### Update & Uninstall
 
 ```bash
