@@ -41,6 +41,13 @@ class A3s < Formula
     end
   end
 
+  def caveats
+    <<~EOS
+      The interactive Code TUI is launched with:
+        a3s code
+    EOS
+  end
+
   test do
     assert_match "a3s", shell_output("#{bin}/a3s --version")
     assert_predicate bin/"moli/moli", :exist?
