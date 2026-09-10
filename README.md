@@ -10,37 +10,50 @@ This repository contains Homebrew formulae for A3S Lab projects.
 
 ## Installation
 
+Install the umbrella CLI (provides the `a3s` binary; interactive Code TUI via `a3s code`):
+
 ```bash
 brew tap a3s-lab/tap https://github.com/A3S-Lab/homebrew-tap
+brew install a3s
+a3s --version
+a3s code
 ```
 
-Then install the tools you need:
+### Other formulae
 
 ```bash
-# Install A3S Box (MicroVM sandbox runtime)
+# MicroVM sandbox runtime
 brew install a3s-box
 
-# Install A3S Code (AI agent with tool execution)
-brew install a3s-code
-
-# Install A3S Search (meta search engine)
+# Meta search engine
 brew install a3s-search
 
-# Install A3S Power (local model management)
+# Local model management
 brew install a3s-power
 
-# Install SafeClaw (secure personal AI assistant)
+# Secure personal AI assistant
 brew install safeclaw
+```
+
+### Legacy / deprecated: `a3s-code`
+
+`brew install a3s-code` installs the **legacy** standalone `a3s-code` binary (currently 0.6.0). It does **not** install `a3s`.
+
+For the current umbrella CLI and TUI, use:
+
+```bash
+brew install a3s
+a3s code
 ```
 
 ### Update & Uninstall
 
 ```bash
-# Update all A3S formulae
-brew update && brew upgrade a3s-box a3s-code a3s-search a3s-power
+# Update formulae
+brew update && brew upgrade a3s a3s-box a3s-search a3s-power
 
 # Uninstall a formula
-brew uninstall a3s-box
+brew uninstall a3s
 
 # Remove the tap entirely
 brew untap a3s-lab/tap
@@ -48,11 +61,20 @@ brew untap a3s-lab/tap
 
 ## Available Formulae
 
-- **`a3s-box`** - Docker-like MicroVM runtime with 55 commands, experimental CRI, and hardware-gated TEE workflows
-- **`a3s-code`** - AI agent with tool execution capabilities and gRPC service
-- **`a3s-search`** - Embeddable meta search engine CLI with proxy pool support
-- **`a3s-power`** - Local model management and serving with OpenAI-compatible API
-- **`safeclaw`** - Secure Personal AI Assistant with TEE Support
+### Primary
+
+- **`a3s`** — Umbrella CLI (`a3s` binary). Run `a3s code` for the interactive Code TUI.
+
+### Other
+
+- **`a3s-box`** — Docker-like MicroVM runtime with hardware-gated TEE workflows
+- **`a3s-search`** — Embeddable meta search engine CLI with proxy pool support
+- **`a3s-power`** — Local model management and serving with OpenAI-compatible API
+- **`safeclaw`** — Secure Personal AI Assistant with TEE Support
+
+### Legacy / deprecated
+
+- **`a3s-code`** — Legacy standalone `a3s-code` binary (not `a3s`). Prefer `brew install a3s` and `a3s code`.
 
 ### a3s-search Usage
 
@@ -78,12 +100,15 @@ a3s-search engines
 ```
 homebrew-tap/
 ├── Formula/           # Homebrew formula files
-│   ├── a3s-box.rb    # A3S Box
-│   ├── a3s-code.rb   # A3S Code
-│   ├── a3s-power.rb  # A3S Power
-│   ├── a3s-search.rb # A3S Search
-│   └── safeclaw.rb   # SafeClaw
-└── README.md         # This file
+│   ├── a3s.rb         # Umbrella CLI (primary)
+│   ├── a3s-box.rb     # A3S Box
+│   ├── a3s-code.rb    # Legacy a3s-code binary
+│   ├── a3s-power.rb   # A3S Power
+│   ├── a3s-search.rb  # A3S Search
+│   └── safeclaw.rb    # SafeClaw
+├── Casks/
+│   └── safeclaw.rb
+└── README.md
 ```
 
 ## Development
@@ -91,7 +116,7 @@ homebrew-tap/
 To test formulas locally:
 
 ```bash
-brew install --build-from-source Formula/a3s-code.rb
+brew install --build-from-source Formula/a3s.rb
 ```
 
 ## License

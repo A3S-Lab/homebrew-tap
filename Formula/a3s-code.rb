@@ -30,7 +30,18 @@ class A3sCode < Formula
     bin.install "a3s-code"
   end
 
+  def caveats
+    <<~EOS
+      This formula installs the legacy standalone `a3s-code` binary, not `a3s`.
+
+      For the current umbrella CLI and interactive Code TUI:
+        brew install a3s
+        a3s code
+    EOS
+  end
+
   test do
     assert_match "a3s-code", shell_output("#{bin}/a3s-code --version")
   end
 end
+
