@@ -38,5 +38,9 @@ class A3sUse < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/a3s-use --version")
+    assert_match '"name":"core"', shell_output("#{bin}/a3s-use browser skills list --json")
+    assert_match '"generation"', shell_output(
+      "#{bin}/a3s-use capability snapshot --scope-kind user --scope-id user/homebrew-test --json",
+    )
   end
 end
