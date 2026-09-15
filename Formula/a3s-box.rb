@@ -9,6 +9,9 @@ class A3sBox < Formula
       url "https://github.com/A3S-Lab/Box/releases/download/v3.2.6/a3s-box-v3.2.6-macos-arm64.tar.gz"
       sha256 "d9d032df47dc1dd007ef4549c32af2525a15f49b8a4f339035e1bb2e02036ad3"
     end
+    on_intel do
+      odie "a3s-box does not publish macOS Intel bottles yet; use Apple Silicon or Linux"
+    end
   end
 
   on_linux do
