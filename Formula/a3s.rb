@@ -5,24 +5,24 @@ class A3s < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.13/a3s-v0.15.13-aarch64-apple-darwin.tar.gz"
-      sha256 "9c6177ac69e5c56b202521ab82a420b44ef5265c3116bb87bf32add573ae63b0"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.14/a3s-v0.15.14-aarch64-apple-darwin.tar.gz"
+      sha256 "6a173076fc6d0e8e2a640498c54c31637cce59dfedd610e09ac1ddec49fbe6e2"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.13/a3s-v0.15.13-x86_64-apple-darwin.tar.gz"
-      sha256 "cad9ee044f513de773b3e8877279088a3dff7dac6cb6910e83be8a0a9723206e"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.14/a3s-v0.15.14-x86_64-apple-darwin.tar.gz"
+      sha256 "28b91201a72c2cca7847d550a287e7ed7c21e49f6ba8d386f49098f0e9716952"
     end
   end
 
   on_linux do
     depends_on "bubblewrap"
     on_arm do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.13/a3s-v0.15.13-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cb6963de173c2a5a2ab787fe5f76bb83c6d5c62159661c46841691dacc0f2e3b"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.14/a3s-v0.15.14-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ce51ca163addeff9fdae865bc78ce22ca06f1a1b3403fdcf8a0bfa2d34680d01"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.13/a3s-v0.15.13-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1bd5314c3ee46d3d101c9dd710b828ed60c90f29b46ad4de834a85e79094cfd9"
+      url "https://github.com/A3S-Lab/CLI/releases/download/v0.15.14/a3s-v0.15.14-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "cda15a1de9c97610d2b6a0582f04f3738e042cfe79cd6def727c63aa598860b8"
     end
   end
 
