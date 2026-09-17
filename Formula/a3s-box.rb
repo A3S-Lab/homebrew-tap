@@ -1,34 +1,28 @@
 class A3sBox < Formula
   desc "MicroVM sandbox runtime with TEE support"
   homepage "https://github.com/A3S-Lab/Box"
-  version "3.2.6"
+  version "3.2.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Box/releases/download/v3.2.6/a3s-box-v3.2.6-macos-arm64.tar.gz"
-      sha256 "d9d032df47dc1dd007ef4549c32af2525a15f49b8a4f339035e1bb2e02036ad3"
+      url "https://github.com/A3S-Lab/Box/releases/download/v3.2.7/a3s-box-v3.2.7-macos-arm64.tar.gz"
+      sha256 "8cb399cbbff907318d4d4d61426ea54cb7de9edfba7c432f132c383ab1b945eb"
     end
-    # No macOS Intel bottle yet. Do not `odie` here: Homebrew loads every
-    # formula in the tap on install/trust, so a load-time failure blocks
-    # sibling formulae (including `a3s`) on Intel runners.
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Box/releases/download/v3.2.6/a3s-box-v3.2.6-linux-arm64.tar.gz"
-      sha256 "e2a07ae21d9b44ff710c55d2ffdece35f03ee850c66253098dd7aca7f5323c8c"
+      url "https://github.com/A3S-Lab/Box/releases/download/v3.2.7/a3s-box-v3.2.7-linux-arm64.tar.gz"
+      sha256 "dbd029a4be5a77b14dff5e049f86775438c529c3ec014fa52ee266c2b7e55d9a"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Box/releases/download/v3.2.6/a3s-box-v3.2.6-linux-x86_64.tar.gz"
-      sha256 "7c9b498be8ba349d3d5dcfc42613c9b6482b88a3d4eee1fc48b173b0b3e8b2ad"
+      url "https://github.com/A3S-Lab/Box/releases/download/v3.2.7/a3s-box-v3.2.7-linux-x86_64.tar.gz"
+      sha256 "c7ee4031443d82f5f27cce64becf3a00b8ffe5827e95dae6366bd1b47e3017e9"
     end
   end
 
   def install
-    if OS.mac? && Hardware::CPU.intel?
-      odie "a3s-box does not publish macOS Intel bottles yet; use Apple Silicon or Linux"
-    end
     bin.install "a3s-box"
     bin.install "a3s-box-shim"
     bin.install "a3s-box-guest-init"
