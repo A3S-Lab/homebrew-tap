@@ -1,28 +1,28 @@
 class A3sPower < Formula
   desc "Model-neutral verifiable inference for confidential systems"
   homepage "https://github.com/A3S-Lab/Power"
-  version "0.9.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9ed4a69eeb2c842223c828ce862a5357a6e9f175b5bab81cfa7cdc2200fb074a"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.11.0/a3s-power-v0.11.0-aarch64-apple-darwin.tar.gz"
+      sha256 "b5f98cd68ef166f563f970b72aa204d43d213e4d12e346cf6bec7fd657ac51cb"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-x86_64-apple-darwin.tar.gz"
-      sha256 "cff0936d704ea233b27898d8fe96a35363d72de7448d00ab7f6af9d7273c7cbd"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.11.0/a3s-power-v0.11.0-x86_64-apple-darwin.tar.gz"
+      sha256 "163adc076aae16996e034f6124b5f5331b5d5c009dcf19df069ff963b8e5b4a6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8160d220bdd1adc49664f3f258b2c774e528c6362767bb5b9743131b10d1e50b"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.11.0/a3s-power-v0.11.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "646820fbd770a9a9bd9c21626b6b42dc37d9d9ca6736e6df2098b71d1a2c7f94"
     end
     on_intel do
-      url "https://github.com/A3S-Lab/Power/releases/download/v0.9.0/a3s-power-v0.9.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "330cae827517dbf3731c5f9c1e3c5a4a94f25f07feec8fa03cd258ea11e0daca"
+      url "https://github.com/A3S-Lab/Power/releases/download/v0.11.0/a3s-power-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ff8563f771f496aedd3102e5691d41acab64b3668d662772a452f25e3bf8e6bf"
     end
   end
 
